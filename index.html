@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McMarys Restaurant - Authentic Ghanaian Cuisine</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">McMarys</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#order" class="nav-link">Order</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Welcome to McMarys Restaurant</h1>
+        <p>Experience the Rich Flavors of Ghana</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Jollof Rice</h3>
+            <p>Traditional spiced rice with tomatoes and vegetables</p>
+            <span class="price">GHS 25</span>
+          </div>
+          <div class="menu-item">
+            <h3>Waakye</h3>
+            <p>Rice and beans with spaghetti, gari, and shito</p>
+            <span class="price">GHS 20</span>
+          </div>
+          <div class="menu-item">
+            <h3>Banku & Tilapia</h3>
+            <p>Fermented corn dough with grilled tilapia and pepper</p>
+            <span class="price">GHS 35</span>
+          </div>
+          <div class="menu-item">
+            <h3>Fufu & Light Soup</h3>
+            <p>Pounded cassava and plantain with goat meat soup</p>
+            <span class="price">GHS 30</span>
+          </div>
+          <div class="menu-item">
+            <h3>Kelewele</h3>
+            <p>Spicy fried plantain with groundnuts</p>
+            <span class="price">GHS 15</span>
+          </div>
+          <div class="menu-item">
+            <h3>Red Red</h3>
+            <p>Black-eyed peas stew with fried plantain</p>
+            <span class="price">GHS 22</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="section order-section">
+      <div class="container">
+        <h2>Place Your Order</h2>
+        <form id="orderForm" class="order-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="dish">Select Dish</label>
+            <select id="dish" required>
+              <option value="">Choose a dish...</option>
+              <option value="jollof">Jollof Rice - GHS 25</option>
+              <option value="waakye">Waakye - GHS 20</option>
+              <option value="banku">Banku & Tilapia - GHS 35</option>
+              <option value="fufu">Fufu & Light Soup - GHS 30</option>
+              <option value="kelewele">Kelewele - GHS 15</option>
+              <option value="redred">Red Red - GHS 22</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" min="1" value="1" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Order</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>About McMarys</h2>
+        <div class="about-content">
+          <p>
+            McMarys Restaurant brings the authentic taste of Ghana to your
+            plate. Established in 2020, we pride ourselves on serving
+            traditional Ghanaian dishes prepared with love and the finest
+            ingredients.
+          </p>
+          <p>
+            Our chefs are masters of Ghanaian cuisine, ensuring every meal is a
+            journey through the rich culinary heritage of Ghana. From the
+            bustling streets of Accra to the serene coasts of Cape Coast, we
+            bring you the flavors that define our nation.
+          </p>
+          <div class="about-details">
+            <div class="detail">
+              <h3>Location</h3>
+              <p>East Legon, Accra, Ghana</p>
+            </div>
+            <div class="detail">
+              <h3>Hours</h3>
+              <p>Mon - Sun: 10:00 AM - 10:00 PM</p>
+            </div>
+            <div class="detail">
+              <h3>Contact</h3>
+              <p>+233 24 123 4567</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 McMarys Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup Model -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <p id="popupMessage"></p>
+      </div>
+    </div>
+
+    <script src="new.js"></script>
+  </body>
+</html>
